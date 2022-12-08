@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tomoru-demo';
+  active = false
+
+    toggleActiveMode() {
+        this.active = !this.active;
+    }
 }

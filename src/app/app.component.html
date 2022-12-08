@@ -1,1 +1,34 @@
-<span>Hello world!</span>
+<div class="root-wrapper">
+    <button tomoruTooltip="Hello World!" [tooltipManualActive]="active">Text tooltip</button>
+
+    <button
+            tomoruTooltip="Tooltip template"
+            [tooltipManualActive]="active"
+            [tooltipTemplate]="template"
+    >Template tooltip</button>
+
+    <button
+            tomoruTooltip="Tooltip right text"
+            [tooltipTemplate]="templateImg"
+            [tooltipManualActive]="active"
+    >Image tooltip</button>
+
+    <button (click)="toggleActiveMode()">Activate tooltips</button>
+</div>
+
+
+
+<ng-template #template>
+    <div
+            class="template-row"
+            style="font-size: 16px; padding-bottom: 8px"
+    >This is template
+    </div>
+    <div class="template-row">It is important button</div>
+    <div class="template-row">Don't click it</div>
+    <div class="template-row">aaa</div>
+</ng-template>
+
+<ng-template #templateImg>
+    <img src="assets/images/a.png" style="width: 200px">
+</ng-template>

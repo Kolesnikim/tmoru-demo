@@ -1,0 +1,16 @@
+<div
+    #tooltip
+    class="tooltip"
+    [@tooltipInOut]
+    [style.max-width]="width"
+>
+    <ng-container *ngIf="tooltipTemplate === null">
+        <ng-container *ngIf="tooltipTemplate === null; else tooltipTemplate">{{ text }}</ng-container>
+    </ng-container>
+
+    <ng-container *ngIf="tooltipTemplate !== null">
+        <ng-container *ngTemplateOutlet="tooltipTemplate; context: tooltipTemplateData"></ng-container>
+    </ng-container>
+
+</div>
+
