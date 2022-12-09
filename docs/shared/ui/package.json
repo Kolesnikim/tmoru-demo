@@ -1,0 +1,29 @@
+{
+  "name": "@tomoru-demo/shared/ui",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@angular/cdk": "15.0.2",
+    "@angular/animations": "15.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "esm2020/tomoru-demo-shared-ui.mjs",
+  "es2020": "esm2020/tomoru-demo-shared-ui.mjs",
+  "esm2020": "esm2020/tomoru-demo-shared-ui.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "es2020": "./esm2020/tomoru-demo-shared-ui.mjs",
+      "esm2020": "./esm2020/tomoru-demo-shared-ui.mjs",
+      "default": "./esm2020/tomoru-demo-shared-ui.mjs"
+    }
+  },
+  "sideEffects": false
+}
