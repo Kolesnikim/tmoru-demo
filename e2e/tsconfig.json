@@ -2,7 +2,7 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "sourceMap": false,
-    "outDir": "../docs/out-tsc",
+    "outDir": "../dist/out-tsc",
     "allowJs": true,
     "types": ["cypress", "node"],
     "forceConsistentCasingInFileNames": true,
